@@ -46,7 +46,8 @@ border: 1px solid red;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    background-color:transparent;
+    font-weight: 600;
+    background-color:var(--blanc);
     /* margin: 0 5px; */
     color: var(--noir);
     position: relative;
