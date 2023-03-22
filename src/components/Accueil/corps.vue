@@ -45,7 +45,7 @@
       <div class="partenaire-content">
         <h2>Nos Partenaires</h2>
         <p>Ils nous accompagnemt</p>
-        <Slide />
+        <!-- <SlidePartenaire /> -->
 
       </div>
     </div>
@@ -58,9 +58,11 @@
 
 <script>
 import Slide from './slide.vue';
+// import SlidePartenaire from './slidePartenaire.vue';
+
 export default {
   name: 'ClientCorps',
-  components:{ Slide},
+  components:{ Slide , },
 
   data() {
     return {

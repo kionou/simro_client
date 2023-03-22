@@ -1,63 +1,69 @@
 <template>
-    <VueAIcarousel :Property="{ID: 'One', }">
-        <CardSilde v-for="card in 10" :key="card.id"/>
-     
-    
+    <VueAIcarousel :Property="{ID: 'One'}">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
     </VueAIcarousel>
-
-
+    
+    <VueAIcarousel :Property="{ID: 'Two', Dlay:1000}">
+      <div class="cards">1</div>
+      <div class="cards">2</div>
+      <div class="cards">3</div>
+      <div class="cards">4</div>
+    </VueAIcarousel>
+    
+    <VueAIcarousel 
+      :Property="{
+        ID: 'ShouldBe_Unique', 
+        NavBtn: 'naveBtnStyle',
+        CountPos: 'CounterPosition',
+        CounterStyle: 'counterNewStyle',
+        CounterActiveStyle: 'CAnewStyle',
+        }"
+    >
+      <div class="cards">1</div>
+      <div class="cards">2</div>
+      <div class="cards">3</div>
+      <div class="cards">4</div>
+    </VueAIcarousel>
 </template>
 
 <script>
 import VueAIcarousel from "vue-ai-carousel"
-import CardSilde from "./cardSilde.vue";
-
-
+//import { defineAsyncComponent } from 'vue';
 
 export default ({
-  name: 'MySlide',
+  name: 'MyHome',
   components: {
-    VueAIcarousel, CardSilde
-
+    VueAIcarousel,
+    //VueAIcarousel: defineAsyncComponent(() =>import(/*webpackChunkName: "VueAIcarousel" */ 'vue-ai-carousel')),
   }
 });
 </script>
 
 <style scoped>
-
+.cards{
+  background: #94fc86;
+  height: 8rem;
+  width: 12rem;
+}
 </style>
 
-<style >
-
-.Slider_Button , .PeVNCommon{
-    display: none;
+<style scoped >
+.naveBtnStyle{
+  height: 50px;
+  width: 50px;
+  background: orange;
 }
-
-/* .card{
-
-width: 110px;
-height: 100%;
-border: 1px solid red;
-} */
-.lC3oC2kE3bD2fB1jC2qB4eF1v div {
-    width: 15rem;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    background-color:transparent;
-    /* margin: 0 5px; */
-    color: var(--noir);
-    position: relative;
-    z-index: 1;
-    margin: 5px;
-    flex-direction: column;
-    padding: 5px;
+.CounterPosition{
+  margin-top: -30px;
 }
-.lC3oC2kE3bD2fB1jC2qB4eF1v div:first-child{
-
-margin-left: auto;
+.counterNewStyle{
+  background: red;
 }
-
+.CAnewStyle{
+  background: purple;
+}
 </style>
