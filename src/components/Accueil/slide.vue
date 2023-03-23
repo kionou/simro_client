@@ -30,7 +30,7 @@ export default ({
 <style >
 
 .Slider_Button , .PeVNCommon{
-    display: none;
+    display: none !important;
 }
 
 /* .card{
@@ -50,7 +50,7 @@ border: 1px solid red;
     font-weight: 600;
     background-color:var(--blanc) !important;
     /* margin: 0 5px; */
-    color: var(--noir);
+    color: var(--noir) !important;
     position: relative;
     z-index: 1;
     margin: 5px;
