@@ -39,15 +39,16 @@ width: 110px;
 height: 100%;
 border: 1px solid red;
 } */
+
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
     width: 15rem;
     height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: 600;
-    background-color:var(--blanc);
+    background-color:var(--blanc) !important;
     /* margin: 0 5px; */
     color: var(--noir);
     position: relative;
