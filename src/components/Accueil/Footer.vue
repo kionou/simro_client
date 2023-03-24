@@ -2,41 +2,40 @@
     <div class="corps-footer" >
       <div class="corps-footer-logo" >
         <a href="" class="logo" >
-          <img src="@/assets/ImagesAccueil/logoN.png" >
-          NaN Digital Academy
+          <img src="@/assets/images/favicon1.png" >
+          Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
         </a>
         </div>
       <div class="corps-footer-menu" >
         <nav >
           <ul class="menu" >
-            <li><router-link to="/" class="Acc-lien current">Accueil</router-link></li>
-            <li><router-link to="/formations" class="Acc-lien">Nos Formations</router-link></li>
-            <li><router-link to="/admission" class="Acc-lien">Admission</router-link></li>
-            <li><router-link to="/naniens" class="Acc-lien">Naniens</router-link></li>
-            <li><router-link to="/parent" class="Acc-lien">Parent</router-link></li>
-            <li><router-link to="/apropos" class="Acc-lien">A propos</router-link></li>
+            <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Plan marché</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Services</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
           </ul>
         </nav>
       </div>
       <div class="corps-footer-reseau" >
         <div class="corps-footer-reseau-content">
-         <a href="https://www.facebook.com/nandigitalacademy" target="_blank" style="color: #1977f2"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.youtube.com/channel/UCWB0VDT_tMZ-xOkvjFvlUnw" target="_blank" style="color: red"><i class="fab fa-youtube-square" ></i></a>
-        <a href="https://api.whatsapp.com/send/?phone=2250789252529&amp;text&amp;type=phone_number&amp;app_absent=0" style="color: #02c100;" target="_blank">
+         <a href="#" target="_blank" style="color: #1977f2"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" target="_blank" style="color: red"><i class="fab fa-youtube-square" ></i></a>
+        <a href="#" style="color: #02c100;" target="_blank">
           <i class="fab fa-whatsapp-square"></i>
         </a>
-        <a href="https://discord.com/invite/dHKn7G29XZ" style="color: var(--violet);" target="_blank"><i class="fab fa-discord" ></i></a>
-        <a href="https://www.linkedin.com/school/nan-digital-academy" style="color: #0b65c2;" target="_blank"><i class="fab fa-linkedin" ></i></a>
+        <a href="#" style="color: #0b65c2;" target="_blank"><i class="fab fa-linkedin" ></i></a>
         </div>
 
       </div>
       <div class="corps-footer-text" >
-        <p >© 2022 Tous droits réservés, NaN Business</p>
+        <p >© 2023 Tous droits réservés, SIMRO</p>
       </div>
     </div>
 </template>
 <script>
 export default {
+  name:'CptFooter'
   
 }
 </script>
@@ -45,9 +44,8 @@ export default {
 .corps-footer {
   max-width: 100%;
   height: 300px;
-  margin: 30px auto;
-  border-radius: 10px;
-  background-color: var(--bg2);
+  margin: 0 auto;
+  background-color: var(--vert);
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -59,8 +57,9 @@ export default {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
   color: var(--blanc);
 }
 
@@ -83,7 +82,7 @@ export default {
 }
 
 .corps-footer-menu ul li a:hover {
-  color: var(--violet);
+  color: var(--noir);
 }
 .corps-footer-reseau{
   width: 100%;
@@ -117,16 +116,15 @@ export default {
   left: 7px;
   position: absolute;
 }
-.fa-discord{
-  left: 1px !important;
-}
+
 
 .corps-footer-text p:hover {
-  color: var(--violet)
+  color: var(--noir)
 }
 .corps-footer-text{
   text-align: center;
   padding: 10px;
+  color: var(--blanc);
 }
 
 @media (max-width: 685px) {
@@ -135,7 +133,7 @@ export default {
     padding:10px;
   }
   .corps-footer-logo a{
-    font-size: 24px;
+    font-size: 18px;
   }
   .corps-footer-menu ul {
     flex-direction: column;
@@ -146,6 +144,12 @@ export default {
   }
   .corps-footer-reseau a{
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 447px) {
+  .corps-footer-logo a{
+    font-size: 13px;
   }
 }
 </style>

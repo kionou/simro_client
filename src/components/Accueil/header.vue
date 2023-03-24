@@ -1,8 +1,10 @@
 <template>  
     <div>
         <Carousel
-          :slides="slides"
+        :slides="slides"
           :interval="5000"
+          :textes="textes"
+          :titres="titres"
           indicators
           class="carou"
           :style="{
@@ -17,7 +19,7 @@ import Carousel from '@/components/Accueil/banner/carousel.vue'
 
 export default {
     name:'HeaderComponent',
-    props: ['slides',  'height'],
+    props: ['slides', 'textes', 'titres', 'height'],
     components:{
         Carousel
     },

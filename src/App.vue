@@ -4,17 +4,18 @@
     <div class="router-link">
       <router-view></router-view>
     </div>
+    <Footer />
 
   </div>
 </template>
 <script>
-
+import Footer from './components/Accueil/Footer.vue';
 import NavBar from './components/Accueil/navbar.vue';
 
 export default {
   name: 'App',
   components:{
-    NavBar,
+    NavBar, Footer
 
   },
   watch: {

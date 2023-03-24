@@ -1,33 +1,43 @@
 <template>
-    <VueAIcarousel :Property="{ID: 'One'}">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-    </VueAIcarousel>
     
     <VueAIcarousel :Property="{ID: 'Two', Dlay:1000}">
-      <div class="cards">1</div>
-      <div class="cards">2</div>
-      <div class="cards">3</div>
-      <div class="cards">4</div>
+      <div class="cards">
+        <div class="image">
+        <img src="@/assets/images/favicon1.png" alt="">
+        </div>
+      </div>
+      <div class="cards">
+        <div class="image">
+        <img src="@/assets/images/logocpc-1.png" alt="">
+        </div>
+      </div>
+      <div class="cards">
+        <div class="image">
+        <img src="@/assets/images/favicon1.png" alt="">
+        </div>
+      </div>
+      <div class="cards">
+        <div class="image">
+        <img src="@/assets/images/logocpc-1.png" alt="">
+        </div>
+      </div>
+      <div class="cards">
+        <div class="image">
+        <img src="@/assets/images/favicon1.png" alt="">
+        </div>
+      </div>
+      <div class="cards">
+        <div class="image">
+        <img src="@/assets/images/logocpc-1.png" alt="">
+        </div>
+      </div>
+   
+
+    
+      
     </VueAIcarousel>
     
-    <VueAIcarousel 
-      :Property="{
-        ID: 'ShouldBe_Unique', 
-        NavBtn: 'naveBtnStyle',
-        CountPos: 'CounterPosition',
-        CounterStyle: 'counterNewStyle',
-        CounterActiveStyle: 'CAnewStyle',
-        }"
-    >
-      <div class="cards">1</div>
-      <div class="cards">2</div>
-      <div class="cards">3</div>
-      <div class="cards">4</div>
-    </VueAIcarousel>
+  
 </template>
 
 <script>
@@ -44,26 +54,44 @@ export default ({
 </script>
 
 <style scoped>
-.cards{
-  background: #94fc86;
-  height: 8rem;
-  width: 12rem;
-}
+
+
+
 </style>
 
 <style scoped >
-.naveBtnStyle{
-  height: 50px;
-  width: 50px;
-  background: orange;
+.lC3oC2kE3bD2fB1jC2qB4eF1v div {
+    width: 290PX;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+    font-weight: 600;
+    background-color:transparent !important;
+    /* margin: 0 5px; */
+    color: var(--noir) !important;
+    position: relative;
+    z-index: 1;
+    margin: 5px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 0 !important;
+    /* border: 1px solid red; */
 }
-.CounterPosition{
-  margin-top: -30px;
+.lC3oC2kE3bD2fB1jC2qB4eF1v div:first-child{
+
+/* margin-left: auto; */
 }
-.counterNewStyle{
-  background: red;
+.cards .image{
+  width:150px ;
+  height: 130px !important;
+  background-color: var(--blanc) !important;
+
+  /* border: 1px solid red; */
 }
-.CAnewStyle{
-  background: purple;
+.cards img{
+  width:100% ;
+  height: auto;
 }
 </style>

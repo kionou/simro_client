@@ -40,16 +40,52 @@
 
       </div>
     </div>
-    <div class="tableau"><h2>Tableau</h2></div>
+    <!-- <div class="tableau"><h2>Tableau</h2></div> -->
     <div class="partenaire">
       <div class="partenaire-content">
         <h2>Nos Partenaires</h2>
         <p>Ils nous accompagnemt</p>
-        <!-- <SlidePartenaire /> -->
+         <SlidePartenaire /> 
 
       </div>
     </div>
-    <div class="contact"><h2>contact</h2></div>
+    <div class="contact">
+      <h2>contact</h2>
+      <div class="contact-content">
+        <div class="content-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Adresse</span>
+          <p>
+            Rond point Cité Keur Gorgui, Immeuble résidences Patrick Onana | Yaoudé, Cameroun
+          </p>
+          
+        </div>
+        <div class="separation">
+
+        </div>
+        <div class="content-card">
+          <i class="fa-solid fa-phone"></i>
+          <span>Téléphone</span>
+          <p>
+            Tél: +237 222 89 56 23 77 <br>
+            Email: simro@gmail.com
+          </p>
+          
+        </div>
+        <div class="separation">
+
+          </div>
+        <div class="content-card">
+          <i class="fa-solid fa-clock"></i>
+          <span>Temps de travail</span>
+          <p>
+           Du Lundi au Vendredi <br> 08h00 à 18h00
+          </p>
+          
+        </div>
+
+      </div>
+    </div>
    
 
 
@@ -58,11 +94,11 @@
 
 <script>
 import Slide from './slide.vue';
-// import SlidePartenaire from './slidePartenaire.vue';
+  import SlidePartenaire from './slidePartenaire.vue';
 
 export default {
   name: 'ClientCorps',
-  components:{ Slide , },
+  components:{ Slide ,SlidePartenaire },
 
   data() {
     return {
@@ -157,6 +193,7 @@ height: auto;
 display: flex;
 justify-content: space-around;
 text-align: justify;
+margin-top: 10px;
 
 
 }
@@ -198,7 +235,7 @@ align-items: center;
 
 
 }
-  .description .content .content-card .card{
+.description .content .content-card .card{
 
 width: 100%;
 max-width: 290px;
@@ -212,13 +249,13 @@ margin:  10px;
 
 .tableau{
   width: 100%;
-  height: 100px;
-
-
+  height: auto;
+  padding: 20px 0;
 }
 .partenaire{
   width: 100%;
   height: auto;
+  padding: 20px 0;
   background-color: var(--vert);
 
 }
@@ -226,8 +263,9 @@ margin:  10px;
   max-width: var(--max-width);
   margin: 0 auto;
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: var(--blanc);
+  padding-bottom: 20px;
 
 }
 .partenaire-content h2{
@@ -246,9 +284,74 @@ margin:  10px;
 }
 .contact{
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: var(--blanc);
-  
+  padding:0 10px 40px;
+}
+.contact h2{
+  text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--vert);
+    text-transform: uppercase;
+}
+.contact-content{
+max-width: var(--max-width);
+margin: 0 auto;
+/* height: 300px; */
+/* border: 1px solid red; */
+padding: 10px;
+display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: var(--box-shadow);
 
 }
+.contact-content .content-card{
+  /* border: 1px solid rgb(60, 255, 0);    */
+  width: 300px;
+  height: 250px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-right: 5px;
+
+}
+.contact-content .separation{
+  border-right: 1px solid var(--vert);
+	height: 250px;
+	}
+
+.contact-content .content-card i{
+
+color: var(--vert);
+font-size: 40px;
+}
+.contact-content .content-card span{
+  font-weight: 600;
+}
+.contact-content .content-card p{
+  text-align: center;
+
+}
+@media (max-width: 768px) {
+  .contact-content .separation{
+  border-right: none;
+	height: 0;
+  border-bottom: 1px solid var(--vert);
+  width: 250px;
+	}
+  .contact-content{
+max-width: 400px;
+width: 90%;
+flex-direction: column;
+
+}
+
+}
+
 </style>

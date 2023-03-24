@@ -26,6 +26,22 @@ export default {
                 "images/bg4.jpg",
                
             ],
+            textes: [      
+                ` Titre1`,
+                'Titre2',
+                'Titre3',
+                'Titre4',
+                'Titre5',
+                
+
+            ],
+            titres: [
+               'texte1',
+               'texte2',
+               'texte3',
+               'texte4',
+               'texte5',
+            ]
     };
   },
 
