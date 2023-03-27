@@ -76,7 +76,7 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(85%);
+  filter: brightness(50%);
   /* background-color: rgba(0, 0, 0, 0.5); */
   
   
