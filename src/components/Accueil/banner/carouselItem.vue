@@ -40,7 +40,7 @@ export default {
   font-size: 50px;
   left: 0;
   width: calc(100% / 3);
-  color: var(--noir);
+  color: var(--blanc);
   /* border: 1px solid red; */
   background-color: #b9bdc2d4;
   height: 100%;
