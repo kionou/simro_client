@@ -100,7 +100,7 @@ export default {
 display: flex;
 align-items: center;
 text-align: center;
-font-size: 14px;
+font-size: 16px;
 padding: 0 !important;
 
 }
