@@ -185,6 +185,7 @@ export default {
   width: 100%;
   height: 190px;
   background-color: var(--vert);
+  padding: 0 10px;
 
 }
 .slide-container1{

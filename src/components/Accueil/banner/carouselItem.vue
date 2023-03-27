@@ -36,13 +36,14 @@ export default {
 .Acc-texte{
   position: absolute;
   z-index: 1;
-  top: 30%;
+  top: 0;
   font-size: 50px;
-  left: 1%;
+  left: 0;
   width: calc(100% / 3);
-  color: var(--blanc);
+  color: var(--noir);
   /* border: 1px solid red; */
- 
+  background-color: #b9bdc2d4;
+  height: 100%;
   text-align: center;
   padding: 5px;
   
@@ -54,17 +55,7 @@ export default {
   font-size: 25px;
   margin-left: 20px;
 }
-.Acc-texte button{
-  padding: 15px 60px;
-  font-size:20px ;
-  background: var(--blanc);;
-  border-radius: 6px;
-  color: var(--blanc);
-  font-weight: bold;
-  border: none;
-  margin-left: 20px;
-  margin-top: 30px;
-}
+
 .carousel-item {
   position: absolute;
   top: 0;
@@ -76,8 +67,7 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(50%);
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* filter: brightness(50%); */
   
   
 }
@@ -102,14 +92,18 @@ export default {
 
 @media (max-width:768px) {
   .Acc-texte{
-    left: 1%;
+    left: 0;
     width: 100%;
+    z-index: 9;
+    bottom: 0;
+    height: 27%;
+    top: auto;
   }
   .Acc-texte h1{
-  font-size: 40px;
+  font-size: 20px;
 }
 .Acc-texte p{
-  font-size: 30px;
+  font-size: 15px;
 }
 }
 </style>

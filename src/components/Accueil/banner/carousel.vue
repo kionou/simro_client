@@ -117,10 +117,11 @@ export default {
 .carousel {
   display: flex;
   justify-content: center;
+  padding:  10px;
 }
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: var(--max-width);
   height: 100%;
   overflow: hidden;
 }

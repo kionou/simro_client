@@ -38,4 +38,10 @@
   .active {
     opacity: 1;
   }
+
+  @media screen and (max-width: 768px) {
+    .carousel-indicators {
+      display: none;
+  }
+  }
   </style>
