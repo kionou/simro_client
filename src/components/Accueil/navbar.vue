@@ -106,6 +106,8 @@ padding: 0 !important;
 }
 .logo p{
   color: var(--vert);
+  text-transform: uppercase;
+    font-weight: 600;
 
 }
 .logo p:hover{
@@ -114,7 +116,7 @@ padding: 0 !important;
 }
 .logo img{
     /* height: 50px; */
-    width: 95px;
+    width: 90px;
     border: none;
 }
 
