@@ -1,16 +1,12 @@
 <template>
     <VueAIcarousel :Property="{ID: 'One', }">
-        <CardSilde v-for="card in 10" :key="card.id"/>
-     
-    
+        <CardSilde v-for="card in 10" :key="card.id"/> 
     </VueAIcarousel>
-
-
 </template>
 
 <script>
 import VueAIcarousel from "vue-ai-carousel"
-import CardSilde from "./cardSilde.vue";
+import CardSilde from "../other/cardSilde.vue";
 
 
 
@@ -33,12 +29,6 @@ export default ({
     display: none !important;
 }
 
-/* .card{
-
-width: 110px;
-height: 100%;
-border: 1px solid red;
-} */
 
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
     width: 15rem;
@@ -49,7 +39,6 @@ border: 1px solid red;
     font-size: 12px !important;
     font-weight: 600;
     background-color:var(--blanc) !important;
-    /* margin: 0 5px; */
     color: var(--noir) !important;
     position: relative;
     z-index: 1;

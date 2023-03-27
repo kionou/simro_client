@@ -10,7 +10,7 @@
         <nav >
           <ul class="menu" >
             <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
-            <li><router-link to="magasin" class="Acc-lien">Magasin</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Magasin</router-link></li>
             <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
             <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
             <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
@@ -39,7 +39,7 @@ export default {
   
 }
 </script>
-<style>
+<style scoped lang="css">
   
 .corps-footer {
   max-width: 100%;
@@ -55,6 +55,7 @@ export default {
 
 .corps-footer-logo a {
   display: flex;
+  flex-direction: initial;
   align-items: center;
   text-decoration: none;
   font-size: 14px;

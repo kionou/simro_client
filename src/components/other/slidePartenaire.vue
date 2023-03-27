@@ -77,18 +77,12 @@ export default ({
     flex-direction: column;
     padding: 10px;
     border-radius: 0 !important;
-    /* border: 1px solid red; */
 }
-.lC3oC2kE3bD2fB1jC2qB4eF1v div:first-child{
 
-/* margin-left: auto; */
-}
 .cards .image{
   width:150px ;
   height: 130px !important;
   background-color: var(--blanc) !important;
-
-  /* border: 1px solid red; */
 }
 .cards img{
   width:100% ;

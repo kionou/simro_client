@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Header from '@/components/Accueil/header.vue';
-import Corps from '@/components/Accueil/corps.vue'
+import Header from '@/components/section/header.vue';
+import Corps from '@/components/corps.vue'
 export default {
   name: 'ViewsAccueil',
   components:{
@@ -27,20 +27,22 @@ export default {
                
             ],
             textes: [      
-                `  Lorem ipsum dolor sit amet consectetur adipisicing.`,
-                'Titre2',
-                'Titre3',
-                'Titre4',
-                'Titre5',
-                
-
-            ],
-            titres: [
-               'texte1',
+                `Lorem ipsum dolor sit amet consectetur adipisicing.`,
                'texte2',
                'texte3',
                'texte4',
                'texte5',
+               
+                
+
+            ],
+            titres: [
+               'Titre1',
+               'Titre2',
+                'Titre3',
+                'Titre4',
+                'Titre5',
+              
             ]
     };
   },

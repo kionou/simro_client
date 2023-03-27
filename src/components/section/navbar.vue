@@ -2,15 +2,15 @@
     <nav class="Acc-nav">
         <div class="container-nav">
           <router-link to="/" class="logo">
-            <img src="@/assets/images/favicon1.png" alt="">
+            <img src="@/assets/images/logo.png" alt="">
             <p>
-              Système d'Information sur les Marchés du Riz et de l'Oignon au Cameroun
+              Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
             </p>
            
           </router-link>
           <ul class="Acc-menu">
             <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
-            <li><router-link to="/magasin" class="Acc-lien">Magasin</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Magasin</router-link></li>
             <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
             <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
             <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
@@ -35,7 +35,7 @@ export default {
         
     },
     mounted() {
-      const burger = document.querySelector('.burger')
+        const burger = document.querySelector('.burger')
         const Navmenu = document.querySelector('.Acc-menu')
         burger.addEventListener('click',() =>{
           burger.classList.toggle("burger-active")
@@ -43,21 +43,7 @@ export default {
         })
     },
     setup(){
-      document.addEventListener('DOMContentLoaded',()=>{
-        // const scrolle = document.querySelector(".Acc-nav");
-       
-
-        // window.addEventListener('scroll', () => {
-        //   if (window.scrollY >= 50) {
-        //     scrolle.classList.add('Acc-nav_active');
-        //     Navmenu.classList.remove('Acc-menu-active')
-        //   }else {
-        //     scrolle.classList.remove('Acc-nav_active');
-        //   }
-        //   burger.classList.remove('burger-active')
-        // })
-        
-      })
+   
     }
 
 }
@@ -97,17 +83,16 @@ export default {
 }
 
 .logo{
-display: flex;
-align-items: center;
-text-align: center;
-font-size: 16px;
-padding: 0 !important;
-
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
 }
 .logo p{
   color: var(--vert);
-  text-transform: uppercase;
-    font-weight: 600;
+  font-size: 10px;
+
 
 }
 .logo p:hover{
@@ -116,7 +101,7 @@ padding: 0 !important;
 }
 .logo img{
     /* height: 50px; */
-    width: 90px;
+    width: 100px;
     border: none;
 }
 
@@ -124,7 +109,7 @@ padding: 0 !important;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* padding: 20px 0; */
+    padding: 10px 0 0 10px;
     transition: all 0.5s ease-in-out;
 }
 .Acc-nav .container-nav ul {
@@ -171,10 +156,8 @@ padding: 10px 0;
 
 .Acc-lien:hover{
     color: var(--vert);
-     
+    
 }
-
-
 .burger{
     margin-top: 5px;
     cursor: pointer;
