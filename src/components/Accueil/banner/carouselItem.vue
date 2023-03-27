@@ -40,12 +40,13 @@ export default {
   font-size: 50px;
   left: 0;
   width: calc(100% / 3);
-  color: var(--blanc);
+  color: var(--noir);
   /* border: 1px solid red; */
   background-color: #b9bdc2d4;
   height: 100%;
   text-align: center;
   padding: 5px;
+  text-align: left;
   
 }
 .Acc-texte h1{
@@ -53,7 +54,6 @@ export default {
 }
 .Acc-texte p{
   font-size: 25px;
-  margin-left: 20px;
 }
 
 .carousel-item {

@@ -1,7 +1,10 @@
 <template>
     <nav class="Acc-nav">
         <div class="container-nav">
-          <router-link to="/" class="logo"><img src="@/assets/images/favicon1.png" alt=""></router-link>
+          <router-link to="/" class="logo">
+            <img src="@/assets/images/favicon1.png" alt="">
+            Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
+          </router-link>
           <ul class="Acc-menu">
             <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
             <li><router-link to="/magasin" class="Acc-lien">Magasin</router-link></li>
@@ -89,9 +92,22 @@ export default {
     margin: 0 auto;
     max-width: var(--max-width);
 }
+
+.logo{
+display: flex;
+align-items: center;
+text-align: center;
+font-size: 9px;
+padding: 0 !important;
+
+}
+.logo:hover{
+
+  color: var(--vert);
+}
 .logo img{
     /* height: 50px; */
-    width: 90px;
+    width: 95px;
     border: none;
 }
 
