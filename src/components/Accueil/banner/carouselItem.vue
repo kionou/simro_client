@@ -38,9 +38,14 @@ export default {
   z-index: 1;
   top: 30%;
   font-size: 50px;
-  left: 22%;
-  max-width: var(--max-width);
+  left: 1%;
+  width: calc(100% / 3);
   color: var(--blanc);
+  /* border: 1px solid red; */
+ 
+  text-align: center;
+  padding: 5px;
+  
 }
 .Acc-texte h1{
   font-size: 50px;
@@ -72,6 +77,8 @@ export default {
   height: 100%;
   object-fit: cover;
   filter: brightness(85%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  
   
 }
 .slide-in-enter-active,
@@ -95,7 +102,8 @@ export default {
 
 @media (max-width:768px) {
   .Acc-texte{
-    left: 9%;
+    left: 1%;
+    width: 100%;
   }
   .Acc-texte h1{
   font-size: 40px;

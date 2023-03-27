@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :slides="slides" :textes="textes" :titres="titres" :height="80"/>
+    <Header :slides="slides" :textes="textes" :titres="titres" :height="60"/>
     <Corps />
 
    
@@ -27,7 +27,7 @@ export default {
                
             ],
             textes: [      
-                ` Titre1`,
+                `  Lorem ipsum dolor sit amet consectetur adipisicing.`,
                 'Titre2',
                 'Titre3',
                 'Titre4',

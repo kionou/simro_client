@@ -183,7 +183,7 @@ export default {
 /* slide debut */
 .slide-container{
   width: 100%;
-  height: 120px;
+  height: 190px;
   background-color: var(--vert);
 
 }
@@ -200,7 +200,7 @@ background-color: var(--blanc);
 /* height: 200px; */
 width: 100%;
 position: absolute;
-top: -50%;
+top: 8%;
 left: 0;
 padding: 8px;
 border-radius: var(--raduis);
