@@ -10,9 +10,9 @@
         <nav >
           <ul class="menu" >
             <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Plan marché</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Services</router-link></li>
+            <li><router-link to="magasin" class="Acc-lien">Magasin</router-link></li>
             <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
             <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
           </ul>
         </nav>
@@ -64,9 +64,10 @@ export default {
 }
 
 .corps-footer-logo img {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 95px !important;
   margin-right: 10px;
+  background-color: var(--blanc);
 }
 
 .corps-footer-menu ul {

@@ -1,27 +1,11 @@
 <template>
   <div class="carousel">
     <div class="carousel-inner">
-      <carousel-indicators
-        v-if="indicators"
-        :total="slides.length"
-        :current-index="currentSlide"
-        @switch="switchSlide($event)"
-      ></carousel-indicators>
-      <carousel-item
-        v-for="(slide, index) in slides"
-        :slide="slide"
-        :key="`item-${index}`"
-        :current-slide="currentSlide"
-        :index="index"
-        :direction="direction"
-        @mouseenter="stopSlideTimer"
-        @mouseout="startSlideTimer"
-      ></carousel-item>
-      <carousel-controls
-        v-if="controls"
-        @prev="prev"
-        @next="next"
-      ></carousel-controls>
+      <carousel-indicators v-if="indicators" :total="slides.length" :texte="f" :current-index="currentSlide"
+        @switch="switchSlide($event)"></carousel-indicators>
+      <carousel-item v-for="(slide, index) in slides" :slide="slide" :key="`item-${index}`" :current-slide="currentSlide"
+      :texte="textes[index]" :index="index" :direction="direction" @mouseenter="stopSlideTimer" @mouseout="startSlideTimer"></carousel-item>
+      <carousel-controls v-if="controls" @prev="prev" @next="next"></carousel-controls>
     </div>
   </div>
 </template>
@@ -32,7 +16,7 @@ import CarouselControls from "./CarouselControls.vue";
 import CarouselIndicators from "./CarouselIndicators.vue";
 
 export default {
-  name:'CptCarousel',
+  name: 'CptCarousel',
   props: {
     slides: {
       type: Array,
@@ -45,6 +29,10 @@ export default {
     indicators: {
       type: Boolean,
       default: false,
+    },
+    textes: {
+      type: Array,
+      required: false
     },
     interval: {
       type: Number,
@@ -114,10 +102,11 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 .carousel-inner {
   position: relative;
-  width: 900px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
   overflow: hidden;
 }
 </style>

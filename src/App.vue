@@ -1,6 +1,7 @@
 <template>
   <div>
     <NavBar class="Acc-headd"/>
+    <!-- <CptNavbar /> -->
     <div class="router-link">
       <router-view></router-view>
     </div>
@@ -9,13 +10,14 @@
   </div>
 </template>
 <script>
+// import CptNavbar from './components/Accueil/componentNavbar.vue';
 import Footer from './components/Accueil/Footer.vue';
 import NavBar from './components/Accueil/navbar.vue';
 
 export default {
   name: 'App',
   components:{
-    NavBar, Footer
+    NavBar, Footer 
 
   },
   watch: {

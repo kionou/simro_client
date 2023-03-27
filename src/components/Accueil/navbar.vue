@@ -4,9 +4,9 @@
           <router-link to="/" class="logo"><img src="@/assets/images/favicon1.png" alt=""></router-link>
           <ul class="Acc-menu">
             <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Plan marché</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Services</router-link></li>
+            <li><router-link to="/magasin" class="Acc-lien">Magasin</router-link></li>
             <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
+            <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
             <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
           </ul>
           <div class="burger">
@@ -28,25 +28,29 @@ export default {
     },methods: {
         
     },
-    setup(){
-      document.addEventListener('DOMContentLoaded',()=>{
-        const scrolle = document.querySelector(".Acc-nav");
-        const burger = document.querySelector('.burger')
+    mounted() {
+      const burger = document.querySelector('.burger')
         const Navmenu = document.querySelector('.Acc-menu')
-
-        window.addEventListener('scroll', () => {
-          if (window.scrollY >= 50) {
-            scrolle.classList.add('Acc-nav_active');
-            Navmenu.classList.remove('Acc-menu-active')
-          }else {
-            scrolle.classList.remove('Acc-nav_active');
-          }
-          burger.classList.remove('burger-active')
-        })
         burger.addEventListener('click',() =>{
           burger.classList.toggle("burger-active")
           Navmenu.classList.toggle("Acc-menu-active")
         })
+    },
+    setup(){
+      document.addEventListener('DOMContentLoaded',()=>{
+        // const scrolle = document.querySelector(".Acc-nav");
+       
+
+        // window.addEventListener('scroll', () => {
+        //   if (window.scrollY >= 50) {
+        //     scrolle.classList.add('Acc-nav_active');
+        //     Navmenu.classList.remove('Acc-menu-active')
+        //   }else {
+        //     scrolle.classList.remove('Acc-nav_active');
+        //   }
+        //   burger.classList.remove('burger-active')
+        // })
+        
       })
     }
 
@@ -56,17 +60,16 @@ export default {
 <style>
 
 .Acc-nav {
-    left: 0;
+    /* left: 0;
     position: fixed;
     right: 0;
     top: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; */
+    background-color:var(--blanc);
    
 }
 .Acc-nav_active{
-    background-color:var(--blanc);
     transition: 0.5s ease-in;
-    box-shadow: var(--shadow-medium);
 }
 
 
@@ -97,25 +100,26 @@ export default {
     display: flex;
     justify-content: space-between;
     /* padding: 20px 0; */
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .Acc-nav .container-nav ul {
     align-items: center;
     display: flex;
     justify-content: center;
     list-style-type: none;
+    z-index: 5;
 }
 
 .Acc-nav a {
-    color: var(--blanc); 
+    color: var(--noir); 
     padding: 7px 15px;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
-.Acc-nav_active a{
+/* .Acc-nav_active a{
     color:var(--bg2);
 
-}
+} */
 .Acc-nav a::before{
     content: '';
     position:absolute;
@@ -127,14 +131,14 @@ export default {
     transform-origin: right;
 
 }
-.Acc-nav.active {
+/* .Acc-nav.active {
     background-color: var(--blanc);;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
+} */
 
-.Acc-nav.active a {
+/* .Acc-nav.active a {
     color: var(--noir);
-}
+} */
 
 .Acc-nav.active .container-nav {
 padding: 10px 0;
@@ -155,7 +159,7 @@ padding: 10px 0;
     width: 25px;
     height: 5px;
     margin: 5px;
-    background-color: var(--blanc);
+    background-color: var(--noir);
 
 }
 .Acc-nav_active .burger div{
@@ -188,7 +192,7 @@ padding: 10px 0;
     }
 
     .Acc-menu{
-        position: fixed;
+        position: absolute;
         left: 0px;
         top:-165% ;
         gap: 6;
@@ -199,8 +203,8 @@ padding: 10px 0;
         text-align: center;
         transition:  0.3s;
         margin-top: 88px;
-        height: 300px;
-        overflow: scroll;
+        /* height: 300px; */
+        /* overflow: scroll; */
     }
 
     .Acc-nav a{

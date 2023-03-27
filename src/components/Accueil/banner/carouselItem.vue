@@ -40,6 +40,7 @@ export default {
   font-size: 50px;
   left: 22%;
   max-width: var(--max-width);
+  color: var(--blanc);
 }
 .Acc-texte h1{
   font-size: 50px;
@@ -69,7 +70,7 @@ export default {
 .carousel-item img{
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   filter: brightness(85%);
   
 }
