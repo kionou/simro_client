@@ -4,7 +4,7 @@
           <router-link to="/" class="logo">
             <img src="@/assets/images/favicon1.png" alt="">
             <p>
-              Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
+              Système d'Information sur les Marchés du Riz et de l'Oignon au Cameroun
             </p>
            
           </router-link>
@@ -100,13 +100,17 @@ export default {
 display: flex;
 align-items: center;
 text-align: center;
-font-size: 12px;
+font-size: 14px;
 padding: 0 !important;
 
 }
-.logo:hover{
-
+.logo p{
   color: var(--vert);
+
+}
+.logo p:hover{
+
+  color: var(--red);
 }
 .logo img{
     /* height: 50px; */
