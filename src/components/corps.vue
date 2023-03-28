@@ -12,6 +12,16 @@
     <section class="description">
       <Description /> 
     </section>
+    <section class="magasin">
+      <h2>Liste des Magasins</h2>
+      <Magasin /> 
+    </section>
+
+    <section class="tableau">
+      <h2>Prix & Stocks</h2>
+      <Tableau /> 
+    </section>
+    
 
     <!-- section partenaire debut -->
     <section class="partenaire">
@@ -29,12 +39,14 @@
   import Slide from '../components/section/slide.vue';
 import Contact from './section/contact.vue';
 import Description from './section/description.vue';
+import Magasin from './section/magasin.vue';
+import Tableau from './section/tableau.vue';
 import Partenaire from './section/partenaire.vue';
 
 
 export default {
   name: 'ClientCorps',
-  components:{ Slide ,Description , Partenaire , Contact },
+  components:{ Slide ,Description ,Magasin, Partenaire,Tableau , Contact },
 
   data() {
     return {
@@ -99,13 +111,35 @@ padding-bottom: 30px;
 }
 
 
+/* magasin debut */
+.magasin{
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+.magasin h2{
+  text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
 /* tableau debut */
 .tableau{
   width: 100%;
   height: auto;
   padding: 20px 0;
+  background-color: var(--blanc);
 }
-
+.tableau h2{
+  text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
 /* partenaire debut */
 .partenaire{
   width: 100%;
