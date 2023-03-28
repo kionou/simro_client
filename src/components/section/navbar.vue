@@ -13,7 +13,7 @@
             <li><router-link to="#" class="Acc-lien">Magasin</router-link></li>
             <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
             <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
+            <li><router-link to="{name:'accueil' , hash : '#contact'}" class="Acc-lien">Contact</router-link></li>
           </ul>
           <div class="burger">
             <div class="line1"></div>

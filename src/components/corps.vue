@@ -19,7 +19,7 @@
     </section>
 
     <!-- section contact debut  -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <Contact /> 
     </section>
   </div>

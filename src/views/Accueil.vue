@@ -1,9 +1,7 @@
 <template>
   <div>
     <Header :slides="slides" :textes="textes" :titres="titres" :height="60"/>
-    <Corps />
-
-   
+    <Corps/>
   </div>
 </template>
 
@@ -27,22 +25,18 @@ export default {
                
             ],
             textes: [      
-                `Lorem ipsum dolor sit amet consectetur adipisicing.`,
+               `Lorem ipsum dolor sit amet consectetur adipisicing.`,
                'texte2',
                'texte3',
                'texte4',
                'texte5',
-               
-                
-
             ],
             titres: [
                'Titre1',
                'Titre2',
-                'Titre3',
-                'Titre4',
-                'Titre5',
-              
+               'Titre3',
+               'Titre4',
+               'Titre5',  
             ]
     };
   },

@@ -4,6 +4,7 @@
         <div class="card-image">
         <img src="@/assets/images/slide_oignon.png" alt="">
         </div>
+        <span>375 F CFA</span>
         <span>oignon </span>
     </div>
     </div>
@@ -38,13 +39,10 @@ width: 10rem;
 .card .card-image{
     width: 100%;
     height: 100%;
-  
-
-
 }
 .card .card-image img{
     width: 73%;
-    height: 100px;
+    /* height: 100px; */
 
 }
 </style>
