@@ -52,14 +52,14 @@ export default ({
   }
 });
 </script>
-
-<style scoped>
-
-
-
+<style >
+.Slider_Button , .PeVNCommon {
+    display: none !important;
+}
 </style>
 
-<style scoped >
+<style  scoped >
+
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
     width: 290PX;
     height: 160px;

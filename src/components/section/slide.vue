@@ -22,16 +22,7 @@ export default ({
   }
 });
 </script>
-
 <style scoped>
-
-</style>
-
-<style >
-
-.Slider_Button {
-    display: none !important;
-}
 .hH6bF5bC7dM2dF4iB1eJ1eD4k .Previous{
   color: var(--vert) !important;
 
@@ -45,10 +36,50 @@ export default ({
    font-size: 36px;
    text-shadow: none !important;
    height: 0 !important;
-    width: 0 !important;
-    padding: 22px;
-    text-shadow: none !important;
+   width: 0 !important;
+   padding: 22px;
+   text-shadow: none !important;
+   /* display: block !important; */
 }
+ .fa-solid{
+    position: absolute;
+    font-weight: 900;
+    font-size: 30px;
+    top: 37%;
+    padding: 10px;
+    z-index: 7;
+    background: #ffffff8a;
+
+ }
+ .fa-chevron-right{
+    right: 0;
+    color: var(--red);
+ }
+ .fa-chevron-left{
+    left: 0;
+    color: var(--vert);
+ }
+
+
+ @media (max-width: 457px) {
+  .fa-solid{
+    font-size: 22px;
+  
+  }
+
+}
+
+</style>
+
+
+
+<style  >
+
+.Slider_Button {
+    display: none !important;
+}
+
+
 
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
     width: 15rem;
@@ -70,34 +101,6 @@ export default ({
 
 margin-left: auto;
 }
-@media (min-width: 460px) {
-  .fa-solid{
-    display: none;
-  
-  }
 
-}
-@media (max-width: 460px) {
-  .PeVNCommon{
-    display: none !important;
-  }
- .fa-solid{
-    position: absolute;
-    font-weight: 900;
-    font-size: 22px;
-    top: 37%;
-    padding: 10px;
-    z-index: 7;
-
- }
- .fa-chevron-right{
-    right: 0;
-    color: var(--red);
- }
- .fa-chevron-left{
-    left: 0;
-    color: var(--vert);
- }
-}
 
 </style>
