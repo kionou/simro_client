@@ -2,7 +2,7 @@
     <nav class="Acc-nav">
         <div class="container-nav">
           <router-link to="/" class="logo">
-            <img src="@/assets/images/logo2.png" alt="">
+            <img src="@/assets/images/logo1.png" alt="">
             
            
           </router-link>
@@ -48,10 +48,12 @@ export default {
 </script>
 <style scoped>
 .logo img{
-    height: 5rem;
+  height: 5rem;
+    width: 20rem;
+    border: none;
+    object-position: bottom; height: 5rem;
     width: 36rem;
     border: none;
-    object-fit: contain;
 }
 </style>
 

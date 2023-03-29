@@ -49,9 +49,10 @@ export default {
 <style scoped>
 .logo img{
     height: 5rem;
-    width: 36rem;
+    width: 25rem;
     border: none;
     object-fit: contain;
+
 }
 </style>
 
@@ -64,7 +65,7 @@ export default {
     top: 0;
     transition: all 0.3s ease-in-out; */
     background-color:var(--blanc);
-   border-bottom: 1px solid red;
+   
 }
 .Acc-nav_active{
     transition: 0.5s ease-in;

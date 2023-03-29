@@ -1,6 +1,12 @@
 <template>
   <div>
     <NavBar class="Acc-headd"/>
+    <NavbarCopyVue class="Acc-headd"/>
+    <NavbarCopy class="Acc-headd"/>
+    <NavbarCopy3 class="Acc-headd"/>
+
+
+
     <!-- <CptNavbar /> -->
     <div class="router-link">
       <router-view></router-view>
@@ -13,11 +19,16 @@
 // import CptNavbar from './components/Accueil/componentNavbar.vue';
 import Footer from './components/section/Footer.vue';
 import NavBar from './components/section/navbar.vue';
+import NavbarCopyVue from './components/section/navbar copy.vue';
+import NavbarCopy from './components/section/navbar copy 2.vue';
+import NavbarCopy3 from './components/section/navbar copy 3.vue';
+
+
 
 export default {
   name: 'App',
   components:{
-    NavBar, Footer 
+    NavBar, Footer ,NavbarCopyVue , NavbarCopy , NavbarCopy3
 
   },
   watch: {
