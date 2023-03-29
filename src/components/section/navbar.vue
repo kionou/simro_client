@@ -47,12 +47,7 @@ export default {
 }
 </script>
 <style scoped>
-.logo img{
-    height: 5rem;
-    width: 36rem;
-    border: none;
-    object-fit: contain;
-}
+
 </style>
 
 <style>
@@ -64,7 +59,6 @@ export default {
     top: 0;
     transition: all 0.3s ease-in-out; */
     background-color:var(--blanc);
-   border-bottom: 1px solid red;
 }
 .Acc-nav_active{
     transition: 0.5s ease-in;
@@ -89,10 +83,7 @@ export default {
 }
 
 .logo{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+   
     padding: 0 !important;
     /* border: 1px solid red; */
 }
@@ -106,11 +97,11 @@ export default {
 
   color: var(--red);
 }
-/* .logo img{
-    height: 5rem;
-    width: 19rem;
+.logo img{
+    height: 4rem;
+    /* width: 19rem; */
     border: none;
-} */
+}
 
 .Acc-nav .container-nav{
     align-items: center;
@@ -180,10 +171,49 @@ padding: 10px 0;
 .Acc-nav_active .burger div{
     background-color: var(--noir);
 }
-@media (max-width: 880px) {
-  .logo p{
-  display: none;
+@media (max-width: 1000px) {
+  .logo img{
+    width: 600px;
+    /* border: 1px solid red; */
+
 }
+
+}
+@media (max-width: 913px) {
+  .logo img{
+    width: 570px;
+    /* border: 1px solid rgb(0, 255, 38); */
+  }
+}
+@media (max-width: 768px) {
+  .logo img{
+    width: 504px;
+    /* border: 1px solid rgb(0, 255, 38); */
+  }
+}
+@media (max-width: 555px) {
+  .logo img{
+    width: 400px;
+    /* border: 1px solid rgb(0, 255, 38); */
+    object-fit: contain;
+  }
+}
+@media (max-width: 454px) {
+  .logo img{
+    width: 330px;
+    /* border: 1px solid rgb(0, 255, 38); */
+    object-fit: contain;
+  }
+}
+@media (max-width: 383px) {
+  .logo img{
+    width: 268px;
+    /* border: 1px solid rgb(0, 81, 255); */
+    object-fit: contain;
+  }
+}
+@media (max-width: 880px) {
+
   .Acc-nav .container-nav{
     padding:20px 0 0;
   }
@@ -220,7 +250,7 @@ padding: 10px 0;
         width: 100%;
         text-align: center;
         transition:  0.3s;
-        margin-top: 88px;
+        margin-top: 90px;
         /* height: 300px; */
         /* overflow: scroll; */
     }
