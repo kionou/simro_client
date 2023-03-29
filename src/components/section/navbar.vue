@@ -2,10 +2,8 @@
     <nav class="Acc-nav">
         <div class="container-nav">
           <router-link to="/" class="logo">
-            <img src="@/assets/images/logo.png" alt="">
-            <p>
-              Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
-            </p>
+            <img src="@/assets/images/logo1.png" alt="">
+            
            
           </router-link>
           <ul class="Acc-menu">
@@ -88,6 +86,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding: 0 !important;
+    border: 1px solid red;
 }
 .logo p{
   color: var(--vert);
@@ -100,8 +99,8 @@ export default {
   color: var(--red);
 }
 .logo img{
-    /* height: 50px; */
-    width: 100px;
+    height: 5rem;
+    width: 19rem;
     border: none;
 }
 

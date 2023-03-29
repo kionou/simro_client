@@ -1,12 +1,10 @@
 <template>
   <div class="container-fluid">
     <!-- section carousel debut -->
-    <section class="slide-container">
-      <div class="slide-container1">
-        <div class="container-slide">
-      <Slide />
-    </div>
-      </div> 
+    <section class="slide">
+      <div class="slide-content">
+        <Slide /> 
+      </div>
     </section>
 <!-- section description debut -->
     <section class="description">
@@ -36,7 +34,7 @@
 </template>
 
 <script>
-  import Slide from '../components/section/slide.vue';
+  import Slide from '../components/other/slide1.vue';
 import Contact from './section/contact.vue';
 import Description from './section/description.vue';
 import Magasin from './section/magasin.vue';
@@ -44,9 +42,10 @@ import Tableau from './section/tableau.vue';
 import Partenaire from './section/partenaire.vue';
 
 
+
 export default {
   name: 'ClientCorps',
-  components:{ Slide ,Description ,Magasin, Partenaire,Tableau , Contact },
+  components:{ Slide ,Description ,Magasin, Partenaire,Tableau , Contact , },
 
   data() {
     return {
@@ -72,33 +71,23 @@ export default {
 
 }
 /* slide debut */
-.slide-container{
+.slide{
   width: 100%;
-  height: 190px;
+  /* height: 190px; */
   background-color: var(--vert);
-  padding: 0 10px;
+  padding: 10px;
 
 }
-.slide-container1{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: 0 auto;
-  max-width: var(--max-width);
+.slide-content{
 
-}
-.slide-container .container-slide{
-background-color: var(--blanc);
-width: 100%;
-position: absolute;
-top: 8%;
-left: 0;
-padding: 8px;
-border-radius: var(--raduis);
+border: 1px solid red;
 max-width: var(--max-width);
 margin: 0 auto;
+padding-bottom: 6px;
 
 }
+
+
 /* slide fin */
 
 /* description debut */

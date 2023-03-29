@@ -3,7 +3,7 @@
           <i class="fa-solid fa-chevron-right" ></i>
                <i class="fa-solid fa-chevron-left" ></i>
     <VueAIcarousel :Property="{ID: 'One', }">
-        <CardSilde v-for="card in 10" :key="card.id"/>
+        <CardSilde v-for="card in 1" :key="card.id" />
     </VueAIcarousel>
   </div> 
 </template>
@@ -30,6 +30,27 @@ export default ({
 .hH6bF5bC7dM2dF4iB1eJ1eD4k .Next{
   color: var(--red) !important;
 
+}
+.lC3oC2kE3bD2fB1jC2qB4eF1v div:last-child{
+
+  margin-left: 0 !important;
+}
+.lC3oC2kE3bD2fB1jC2qB4eF1v div{
+
+  
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+    font-weight: 600;
+    background-color:transparent !important;
+    color: var(--noir) !important;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    border-radius: 0 !important;
+    margin: 0 10px !important;
 }
 .PeVNCommon{
    top: 37% !important;

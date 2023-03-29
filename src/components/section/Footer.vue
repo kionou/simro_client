@@ -2,8 +2,8 @@
     <div class="corps-footer" >
       <div class="corps-footer-logo" >
         <a href="" class="logo" >
-          <img src="@/assets/images/favicon1.png" >
-          Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
+          <img src="@/assets/images/logo1.png" >
+          <!-- Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun -->
         </a>
         </div>
       <div class="corps-footer-menu" >
@@ -58,16 +58,16 @@ export default {
   flex-direction: initial;
   align-items: center;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
+  /* font-size: 14px; */
+  /* font-weight: 400; */
   text-align: center;
   color: var(--blanc);
 }
 
 .corps-footer-logo img {
-  height: 70px;
-  width: 95px !important;
-  margin-right: 10px;
+  height: 6rem;
+  width: 19rem !important;
+  /* margin-right: 10px; */
   background-color: var(--blanc);
 }
 
