@@ -9,10 +9,10 @@
           </router-link>
           <ul class="Acc-menu">
             <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Magasin</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
-            <li><router-link to="{name:'accueil' , hash : '#test'}" class="Acc-lien">Contact</router-link></li>
+            <li><router-link to="/#magasin" class="Acc-lien">Magasin</router-link></li>
+            <li><router-link to="/#stock" class="Acc-lien">Prix</router-link></li>
+            <li><router-link to="/#partenaire" class="Acc-lien">Partenaires</router-link></li>
+            <li><router-link to="/#contact" class="Acc-lien">Contact</router-link></li>
           </ul>
           <div class="burger">
             <div class="line1"></div>
@@ -178,9 +178,9 @@ padding: 10px 0;
 }
 
 }
-@media (max-width: 913px) {
+@media (max-width: 953px) {
   .logo img{
-    width: 570px;
+    width: 525px;
   }
 }
 @media (min-width: 768px) {
@@ -240,7 +240,7 @@ padding: 10px 0;
         width: 100%;
         text-align: center;
         transition:  0.3s;
-        margin-top: 90px;
+        margin-top: 86px;
         /* height: 300px; */
         /* overflow: scroll; */
     }

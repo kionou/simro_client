@@ -2,7 +2,7 @@
     <div class="container">
         {{ search }}
         <div class="search_wrap search_wrap_5">
-				<input type="text" class="input" placeholder="Effectuez une recherche..." v-model="search" @click="rech">
+				<!-- <input type="text" class="input" placeholder="Effectuez une recherche..." v-model="search" @click="rech">
 				<div class="btn">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</div>
@@ -18,7 +18,8 @@
                         <li>Bonjour</li>
 
                     </ul>
-                </div>
+                </div> -->
+                <Select /> 
 		</div>
         <main class="table">
         <section class="table__header">
@@ -82,7 +83,21 @@
                         <th> Oignon violet </th>
                         <th> Riz du nord </th>
                         <th> Riz du sud </th>
-                     
+
+                        <!-- <th> Oignon jaune </th>
+                        <th> Oignon violet </th>
+                        <th> Riz du nord </th>
+                        <th> Riz du sud </th>
+
+                        <th> Oignon jaune </th>
+                        <th> Oignon violet </th>
+                        <th> Riz du nord </th>
+                        <th> Riz du sud </th>
+
+                        <th> Oignon jaune </th>
+                        <th> Oignon violet </th>
+                        <th> Riz du nord </th>
+                        <th> Riz du sud </th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -107,7 +122,16 @@
                        
                     </tr>
                 
-
+                    <tr>
+                        <td> Yaoude I </td>
+                        <td>207 T</td>
+                        <td> 420 T </td>
+                        <td> 240 T </td>
+                        <td>
+                            20 T
+                        </td>
+                       
+                    </tr>
                     
                 </tbody>
             </table>
@@ -117,8 +141,10 @@
 </template>
 
 <script>
+import Select from '../other/select.vue';
 export default {
     name: 'SimroClientTableau',
+    components:{ Select},
 
     data() {
         return {
@@ -135,7 +161,7 @@ export default {
     methods: {
         rech () {
             console.log('onjour');
-            this.rechdisplay = true
+            this.rechdisplay = !this.rechdisplay
         
         }
     },
@@ -154,83 +180,15 @@ export default {
 .search_wrap{
     max-width: 500px;
 	width: 100%;
-    /* height: 100px; */
 	margin: 15px auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     position: relative;
     padding: 0 10px;
 }
-.search_wrap  .input{
-	width: 100%;
-	height: 48%;
-	padding: 10px 20px;
-	border-radius: 23px;
-	font-size: 14px;
-    border: 0;
-	outline: none;
-	color: #5f6368ff;
-    box-shadow:0px 0px 10px #8888884f;
-}
 
-.search_wrap .btn{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 60px;
-	height: 100%;
-	z-index: 1;
-	cursor: pointer;
-    color: #5f6368ff;
-}
-
-.search_wrap.search_wrap_5  .btn{
-	width: 45px;
-	height: 45px;
-	top: 0px;
-    left: 4px;
-	border-radius: 23px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.search_wrap.search_wrap_5  .input{
-	padding-left: 50px;
-}
-
-.search_wrap .dropdown{
-    width: 100%;
-    height: 300px;
-    /* border: 1px solid red; */
-    margin-top: 15px;
-    padding: 15px 10px;
-    box-shadow:0px 0px 10px #8888884f;
-    font-weight: 600;
-    font-size: 16px;
-    overflow: auto;
-
-}
-.search_wrap .dropdown .liste{
-
-display: flex;
-flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-}
-.search_wrap .dropdown .liste li{
-    text-decoration: none;
-    /* border: 1px solid blue; */
-    width: 100%;
-    /* text-align: center; */
-    padding: 10px 0;
-    margin-bottom: 10px;
-
-}
 main.table {
-    /* box-shadow: 0 .4rem .8rem #0005; */
     box-shadow:0px 0px 10px #8888884f;
     overflow: hidden;
 }

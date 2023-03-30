@@ -9,11 +9,11 @@
       <div class="corps-footer-menu" >
         <nav >
           <ul class="menu" >
-            <li><router-link to="/" class="Acc-lien">Accueil</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Magasin</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Prix</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Stock</router-link></li>
-            <li><router-link to="#" class="Acc-lien">Contact</router-link></li>
+            <li><a href="#" class="Acc-lien">Accueil</a></li>
+            <li><router-link to="/#magasin" class="Acc-lien">Magasin</router-link></li>
+            <li><router-link to="/#stock" class="Acc-lien">Prix</router-link></li>
+            <li><router-link to="/#partenaire" class="Acc-lien">Partenaires</router-link></li>
+            <li><router-link to="/#contact" class="Acc-lien">Contact</router-link></li>
           </ul>
         </nav>
       </div>

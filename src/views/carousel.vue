@@ -41,17 +41,18 @@
    
     </VueAIcarousel>
 </div>
-    
+<Select /> 
  
 </template>
 
 <script>
-import VueAIcarousel from "vue-ai-carousel"
+import VueAIcarousel from "vue-ai-carousel";
+import Select from "@/components/other/select.vue";
 
 export default {
   name: 'MyHome',
   components: {
-    VueAIcarousel,
+    VueAIcarousel,Select
     //VueAIcarousel: defineAsyncComponent(() =>import(/*webpackChunkName: "VueAIcarousel" */ 'vue-ai-carousel')),
   }
 };

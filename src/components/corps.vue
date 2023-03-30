@@ -7,22 +7,22 @@
       </div>
     </section>
 <!-- section description debut -->
-    <section class="description">
+    <section class="description" id="about">
       <Description /> 
     </section>
-    <section class="magasin">
+    <section class="magasin" id="magasin">
       <h2>Liste des Magasins</h2>
       <Magasin /> 
     </section>
 
-    <section class="tableau">
+    <section class="tableau" id="stock">
       <h2>Prix & Stocks</h2>
       <Tableau /> 
     </section>
     
 
     <!-- section partenaire debut -->
-    <section class="partenaire">
+    <section class="partenaire" id="partenaire">
       <Partenaire /> 
     </section>
 
