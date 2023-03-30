@@ -2,7 +2,8 @@
     <nav class="Acc-nav">
         <div class="container-nav">
           <router-link to="/" class="logo">
-            <img src="@/assets/images/logo2.png" alt="">
+            <img src="@/assets/images/logo2.png" alt="" class="desktop">
+            <img src="@/assets/images/logo.png" alt="" class="mobile">
             
            
           </router-link>
@@ -174,44 +175,33 @@ padding: 10px 0;
 @media (max-width: 1000px) {
   .logo img{
     width: 600px;
-    /* border: 1px solid red; */
-
 }
 
 }
 @media (max-width: 913px) {
   .logo img{
     width: 570px;
-    /* border: 1px solid rgb(0, 255, 38); */
+  }
+}
+@media (min-width: 768px) {
+  .logo .desktop{
+    display: block;
+  }
+  .logo .mobile{
+    display: none;
   }
 }
 @media (max-width: 768px) {
-  .logo img{
-    width: 504px;
-    /* border: 1px solid rgb(0, 255, 38); */
+  .logo .desktop{
+    display: none;
+  }
+  .logo .mobile{
+    width: 100px;
+  
   }
 }
-@media (max-width: 555px) {
-  .logo img{
-    width: 400px;
-    /* border: 1px solid rgb(0, 255, 38); */
-    object-fit: contain;
-  }
-}
-@media (max-width: 454px) {
-  .logo img{
-    width: 330px;
-    /* border: 1px solid rgb(0, 255, 38); */
-    object-fit: contain;
-  }
-}
-@media (max-width: 383px) {
-  .logo img{
-    width: 268px;
-    /* border: 1px solid rgb(0, 81, 255); */
-    object-fit: contain;
-  }
-}
+
+
 @media (max-width: 880px) {
 
   .Acc-nav .container-nav{

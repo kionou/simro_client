@@ -128,6 +128,7 @@ padding-bottom: 30px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: var(--vert);
 }
 /* partenaire debut */
 .partenaire{
