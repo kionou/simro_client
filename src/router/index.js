@@ -10,7 +10,8 @@ const routes = [
   {
     path: '/',
     name: 'accueil',
-    component: Accueil
+    component: Accueil,
+    props:true,
   },
   {
     path: '/carousel',

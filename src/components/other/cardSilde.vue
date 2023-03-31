@@ -1,14 +1,16 @@
 <template>
-   <div class="cards">
-        <img src="@/assets/images/Oignon-de-garde.png" alt="">
-        <p>oignon</p>
-        <p> 675 F CFA </p>
+   <div class="cards"  v-for="produit in produits" :key="produit.id">
+        <img :src="getImage(produit.image)" alt="">
+        <p> {{ produit.nom }}</p>
+         <p>{{ produit.prix }} F CFA </p>
     </div>
 </template>
 
 <script>
+import { getImage } from '@/lib/getImage';
 export default {
     name: 'SimroClientCardSilde',
+    props:["produits"],
 
     data() {
         return {
@@ -17,11 +19,14 @@ export default {
     },
 
     mounted() {
+       
+        console.log("produits",this.produits);
+       
         
     },
 
     methods: {
-        
+        getImage:getImage
     },
 };
 </script>

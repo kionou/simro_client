@@ -80,7 +80,6 @@ export default {
 }
 .slide-content{
 
-border: 1px solid red;
 max-width: var(--max-width);
 margin: 0 auto;
 padding-bottom: 6px;

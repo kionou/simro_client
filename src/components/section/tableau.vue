@@ -23,7 +23,8 @@
 		</div>
         <main class="table">
             <div class="one-section">
-                <h1>Filière</h1>
+                <div class="content">
+                    <h1>Filière</h1>
                 <div class="card">
                     <img src="@/assets/images/Oignon-de-garde.png" alt="">
                     <span>Filière du Riz</span>
@@ -33,6 +34,8 @@
                     <img src="@/assets/images/Oignon-de-garde.png" alt="">
                     <span>Filière du Riz</span>
                 </div>
+                </div>
+                
             </div>
             <div class="two-section">
                 <section class="table__header">
@@ -67,6 +70,46 @@
                         <td> 130 F CFA </td>
                         <td>
                             130 F CFA
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td> Yaoude II </td>
+                        <td>120 F CFA</td>
+                        <td> 130 F CFA </td>
+                        <td> 190 F CFA </td>
+                        <td>
+                            90 F CFA
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td> Yaoude II </td>
+                        <td>120 F CFA</td>
+                        <td> 130 F CFA </td>
+                        <td> 190 F CFA </td>
+                        <td>
+                            90 F CFA
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td> Yaoude II </td>
+                        <td>120 F CFA</td>
+                        <td> 130 F CFA </td>
+                        <td> 190 F CFA </td>
+                        <td>
+                            90 F CFA
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td> Yaoude II </td>
+                        <td>120 F CFA</td>
+                        <td> 130 F CFA </td>
+                        <td> 190 F CFA </td>
+                        <td>
+                            90 F CFA
                         </td>
                        
                     </tr>
@@ -209,22 +252,41 @@ main.table {
     justify-content: space-between;
 }
 .one-section{
-border: 1px solid red;
+border: 1px solid rgb(0, 51, 255);
 width: 150px;
 height: auto;
+display: flex;
+align-items: center;
+background-color: var(--vert);
+color: var(--blanc);
+margin-right: 10px;
+}
+.one-section .content{
+border: 1px solid rgb(0, 255, 68);
+width: 100%;
+/* height: 300px; */
 padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 .one-section .card{
-    width: 100%;
-    border: 1px solid blue;
+    width: 90%;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    border-radius: var(--raduis);
+    background-color: var(--blanc);
+    color: var(--vert);
+    padding: 10px;
 }
 .one-section .card img{
     width: 100px;
-    height: 100px;
-    border: 1px solid blue;
+    height: 80px;
+    /* border: 1px solid blue; */
 }
 .two-section{
 border: 1px solid red;
@@ -247,6 +309,7 @@ width: 1140px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border: 1px solid blue;
 }
 .table__header .btn button{
     padding: 15px 50px;

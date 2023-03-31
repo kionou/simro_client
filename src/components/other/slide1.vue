@@ -3,23 +3,9 @@
     <!-- <div class="container"> -->
     <VueAIcarousel :Property="{ID: 'Tw', Dlay:1000}">
     
-        <CardSilde v-for="card in 7" :key="card.id" /> 
+        <CardSilde :produits="produits" /> 
      
-    <!-- <div class="cards">
-        <img src="@/assets/images/Oignon-de-garde.png" alt="">
-        <p>oignon</p>
-        <p> 375 F CFA </p>
-    </div>
-    <div class="cards">
-        <img src="@/assets/images/Oignon-de-garde.png" alt="">
-        <p>oignon</p>
-        <p> 375 F CFA </p>
-    </div>
-      <div class="cards">3</div>
-      <div class="cards">4</div>
-      <div class="cards">4</div>
-      <div class="cards">4</div>
-      <div class="cards">4</div> -->
+  
    
     </VueAIcarousel>
 
@@ -32,10 +18,20 @@ import VueAIcarousel from "vue-ai-carousel"
 import CardSilde from "./cardSilde.vue";
 export default {
   name: 'MyHome',
+  data() {
+    return {
+      produits: '',
+    };
+  },
   components: {
     VueAIcarousel, CardSilde
     //VueAIcarousel: defineAsyncComponent(() =>import(/*webpackChunkName: "VueAIcarousel" */ 'vue-ai-carousel')),
-  }
+  },
+  mounted() {
+    const response = require('@/lib/marche.json')
+        console.log(response);
+        this.produits = response
+  },
 };
 </script>
 
