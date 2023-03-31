@@ -31,7 +31,7 @@ export default {
       document.title = `simro - ${title}`
       document.querySelector('.Acc-menu')?.classList.remove('Acc-menu-active')
       document.querySelector('.burger')?.classList.remove('burger-active')
-      // window.scrollTo({top: 0, behavior: 'smooth'})
+      window.scrollTo({top: 0, behavior: 'smooth'})
     }
   }
 }

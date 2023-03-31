@@ -22,7 +22,20 @@
                 <Select /> 
 		</div>
         <main class="table">
-        <section class="table__header">
+            <div class="one-section">
+                <h1>Filière</h1>
+                <div class="card">
+                    <img src="@/assets/images/Oignon-de-garde.png" alt="">
+                    <span>Filière du Riz</span>
+                </div>
+
+                <div class="card">
+                    <img src="@/assets/images/Oignon-de-garde.png" alt="">
+                    <span>Filière du Riz</span>
+                </div>
+            </div>
+            <div class="two-section">
+                <section class="table__header">
             <h1>Magasin du centre</h1>  
             <div class="btn">
                 <button @click="layout = 'prix'">
@@ -78,64 +91,64 @@
             <table>
                 <thead>
                     <tr>
-                        <th> Ville </th>
-                        <th> Oignon blanc </th>
-                        <th> Oignon violet </th>
-                        <th> Riz du nord </th>
-                        <th> Riz du sud </th>
+                        <th> Type de Riz </th>
+                        <th> Sachet 1kg </th>
+                        <th> Sachet 2kg </th>
+                        <th> Sac de 5kg </th>
+                        <th> Sac de 25kg </th>
+                        <th> Sac de 50kg </th>
+                        <th> Sac de 80kg </th>
+                        <th> Sac de 100kg </th>
+                        
 
-                        <!-- <th> Oignon jaune </th>
-                        <th> Oignon violet </th>
-                        <th> Riz du nord </th>
-                        <th> Riz du sud </th>
-
-                        <th> Oignon jaune </th>
-                        <th> Oignon violet </th>
-                        <th> Riz du nord </th>
-                        <th> Riz du sud </th>
-
-                        <th> Oignon jaune </th>
-                        <th> Oignon violet </th>
-                        <th> Riz du nord </th>
-                        <th> Riz du sud </th> -->
+                      
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td> Yaoude I </td>
-                        <td>207 T</td>
-                        <td> 420 T </td>
-                        <td> 240 T </td>
-                        <td>
-                            20 T
-                        </td>
+                        <td>Nerica 3</td>
+
+                        <td>Non</td>
+                        <td>Non </td>
+                        <td> Non </td>
+                        <td>Oui</td>
+                        <td> Non </td>
+                        <td> Non </td>
+                        <td> Non </td>
+
                        
                     </tr>
                     <tr>
-                        <td> Yaoude II </td>
-                        <td>200 T</td>
-                        <td> 205 T</td>
-                        <td> 320 T </td>
-                        <td>
-                            240 T
-                        </td>
+                        <td>Nerica L36</td>
+
+                        <td>Non</td>
+                        <td>Non </td>
+                        <td> Non </td>
+                        <td>Oui</td>
+                        <td> Non </td>
+                        <td> Non </td>
+                        <td> Non </td>
                        
                     </tr>
                 
                     <tr>
-                        <td> Yaoude I </td>
-                        <td>207 T</td>
-                        <td> 420 T </td>
-                        <td> 240 T </td>
-                        <td>
-                            20 T
-                        </td>
+                        <td>Nerica N56</td>
+
+                        <td>Non</td>
+                        <td>Non </td>
+                        <td> Non </td>
+                        <td>Oui</td>
+                        <td> Non </td>
+                        <td> Non </td>
+                        <td> Non </td>
                        
                     </tr>
                     
                 </tbody>
             </table>
         </section>
+            </div>
+      
     </main>
     </div>
 </template>
@@ -172,7 +185,7 @@ export default {
 
 
 .container{
-    max-width: var(--max-width);
+    /* max-width: var(--max-width); */
     margin: 0 auto;
     padding: 10px;
 }
@@ -191,8 +204,32 @@ export default {
 main.table {
     box-shadow:0px 0px 10px #8888884f;
     overflow: hidden;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
 }
-
+.one-section{
+border: 1px solid red;
+width: 150px;
+height: auto;
+padding: 10px;
+}
+.one-section .card{
+    width: 100%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.one-section .card img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}
+.two-section{
+border: 1px solid red;
+width: 1140px;
+}
 .table__header {
     width: 100%;
     padding: .8rem 2rem;
