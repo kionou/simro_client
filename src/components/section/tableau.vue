@@ -25,7 +25,7 @@
             <div class="sidebar  ">
       <ul class="nav-links">
         <li  @click="layout = 'riz'" :class="{active:layout === 'riz'}">
-            <img src="@/assets/images/icon1.png" alt="">
+            <img src="@/assets/images/riz3.png" alt="">
             <span class="link_name">Riz</span>
         </li>
 
