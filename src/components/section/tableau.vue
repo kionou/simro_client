@@ -22,195 +22,55 @@
                 <Select /> 
 		</div>
         <main class="table">
-            <div class="one-section">
-                <div class="content">
-                    <h1>Filière</h1>
-                <div class="card">
-                    <img src="@/assets/images/Oignon-de-garde.png" alt="">
-                    <span>Filière du Riz</span>
-                </div>
+            <div class="sidebar  ">
+      <ul class="nav-links">
+        <li  @click="layout = 'riz'" :class="{active:layout === 'riz'}">
+            <img src="@/assets/images/icon1.png" alt="">
+            <span class="link_name">Riz</span>
+        </li>
 
-                <div class="card">
-                    <img src="@/assets/images/Oignon-de-garde.png" alt="">
-                    <span>Filière du Riz</span>
-                </div>
-                </div>
-                
-            </div>
-            <div class="two-section">
-                <section class="table__header">
-            <h1>Magasin du centre</h1>  
-            <div class="btn">
-                <button @click="layout = 'prix'">
-                    Prix
-                </button>
-                <button @click="layout = 'stock'">
-                    Stock
-                </button>
-            </div>
-        </section>
+        <li @click="layout = 'oignon'" :class="{active:layout === 'oignon'}">
+            <img src="@/assets/images/icon1.png" alt="">
+            <span class="link_name">Oignon</span>
+        </li>
+       
+     
+        <li>
 
-        <section class="table__body" v-if="layout === 'prix'" >
-            <table>
-                <thead>
-                    <tr>
-                        <th> Ville </th>
-                        <th> Oignon blanc </th>
-                        <th> Oignon violet </th>
-                        <th> Riz du nord </th>
-                        <th> Riz du sud </th>
-                     
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Yaoude I </td>
-                        <td>130 F CFA</td>
-                        <td> 130 F CFA </td>
-                        <td> 130 F CFA </td>
-                        <td>
-                            130 F CFA
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td> Yaoude II </td>
-                        <td>120 F CFA</td>
-                        <td> 130 F CFA </td>
-                        <td> 190 F CFA </td>
-                        <td>
-                            90 F CFA
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td> Yaoude II </td>
-                        <td>120 F CFA</td>
-                        <td> 130 F CFA </td>
-                        <td> 190 F CFA </td>
-                        <td>
-                            90 F CFA
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td> Yaoude II </td>
-                        <td>120 F CFA</td>
-                        <td> 130 F CFA </td>
-                        <td> 190 F CFA </td>
-                        <td>
-                            90 F CFA
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td> Yaoude II </td>
-                        <td>120 F CFA</td>
-                        <td> 130 F CFA </td>
-                        <td> 190 F CFA </td>
-                        <td>
-                            90 F CFA
-                        </td>
-                       
-                    </tr>
-                    <tr>
-                        <td> Yaoude II </td>
-                        <td>120 F CFA</td>
-                        <td> 130 F CFA </td>
-                        <td> 190 F CFA </td>
-                        <td>
-                            90 F CFA
-                        </td>
-                       
-                    </tr>
-                
+        </li>
+      </ul>
+    </div>
+    <div class="two-section">
+            <Riz v-if="layout === 'riz'" />
+            <Oignon v-if="layout === 'oignon'"/>
 
-                    
-                </tbody>
-            </table>
-        </section>
-
-        <section class="table__body"  v-if="layout === 'stock'" >
-            <table>
-                <thead>
-                    <tr>
-                        <th> Type de Riz </th>
-                        <th> Sachet 1kg </th>
-                        <th> Sachet 2kg </th>
-                        <th> Sac de 5kg </th>
-                        <th> Sac de 25kg </th>
-                        <th> Sac de 50kg </th>
-                        <th> Sac de 80kg </th>
-                        <th> Sac de 100kg </th>
-                        
-
-                      
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nerica 3</td>
-
-                        <td>Non</td>
-                        <td>Non </td>
-                        <td> Non </td>
-                        <td>Oui</td>
-                        <td> Non </td>
-                        <td> Non </td>
-                        <td> Non </td>
-
-                       
-                    </tr>
-                    <tr>
-                        <td>Nerica L36</td>
-
-                        <td>Non</td>
-                        <td>Non </td>
-                        <td> Non </td>
-                        <td>Oui</td>
-                        <td> Non </td>
-                        <td> Non </td>
-                        <td> Non </td>
-                       
-                    </tr>
-                
-                    <tr>
-                        <td>Nerica N56</td>
-
-                        <td>Non</td>
-                        <td>Non </td>
-                        <td> Non </td>
-                        <td>Oui</td>
-                        <td> Non </td>
-                        <td> Non </td>
-                        <td> Non </td>
-                       
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </section>
-            </div>
-      
+    </div>
     </main>
     </div>
 </template>
 
 <script>
 import Select from '../other/select.vue';
+import Oignon from '../other/cptOignon.vue';
+import Riz from '../other/cptRiz.vue';
 export default {
     name: 'SimroClientTableau',
-    components:{ Select},
+    components:{ Select , Oignon , Riz},
 
     data() {
         return {
-            layout:'prix',
+            layout:'riz',
             search:'',
-            rechdisplay:false
+            rechdisplay:false,
+            active:true
         };
     },
 
     mounted() {
+        let sidebar = document.querySelector(".sidebar");
+      if (window.screen.width <= 700) {
+        sidebar.classList.toggle("close");
+      }
         
     },
 
@@ -224,7 +84,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="css" >
 
 
 .container{
@@ -247,272 +107,113 @@ export default {
 main.table {
     box-shadow:0px 0px 10px #8888884f;
     overflow: hidden;
-    border: 1px solid blue;
-    display: flex;
-    justify-content: space-between;
+    /* border: 1px solid blue; */
+    position: relative;
+    /* display: flex;
+    justify-content: space-between; */
 }
-.one-section{
-border: 1px solid rgb(0, 51, 255);
+
+.sidebar {
+ /* border: 1px solid rgb(0, 51, 255); */
 width: 150px;
-height: auto;
+height: 100%;
 display: flex;
 align-items: center;
 background-color: var(--vert);
-color: var(--blanc);
+/* color: var(--blanc); */
 margin-right: 10px;
+position: absolute;
+z-index: 100;
 }
-.one-section .content{
-border: 1px solid rgb(0, 255, 68);
+
+.sidebar.close {
+  width: 30px;
+}
+.two-section{
+/* border: 1px solid red; */
+/* width: 1140px; */
+position: relative;
+  height: 100%;
+  left: 150px;
+  width: calc(100% - 150px);
+  position: relative;
+}
+.sidebar.close~.two-section {
+  left: 30px;
+  width: calc(100% - 30px);
+}
+.sidebar .nav-links {
+  /* height: 100%; */
+  /* padding: 30px 0 150px 0; */
+  overflow: auto;
+  /* border: 1px solid rgb(0, 255, 68); */
 width: 100%;
 /* height: 300px; */
-padding: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
-
 }
-.one-section .card{
-    width: 90%;
+
+.sidebar.close .nav-links {
+  overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+     width: 100%;
     /* border: 1px solid blue; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-top: 10px;
-    border-radius: var(--raduis);
-    background-color: var(--blanc);
-    color: var(--vert);
-    padding: 10px;
+    /* background-color: var(--blanc); */
+    /* color: var(--vert); */
+    padding-right: 5px;
 }
-.one-section .card img{
-    width: 100px;
-    height: 80px;
+.sidebar .nav-links li:hover{
+    background-color: var(--blanc);
+    cursor: pointer;
+    color: var(--vert);
+
+}
+
+
+.sidebar .nav-links li img {
+    width: 37px;
+    height: 37px;
+    padding: 5px;
     /* border: 1px solid blue; */
 }
-.two-section{
-border: 1px solid red;
-width: 1140px;
-}
-.table__header {
-    width: 100%;
-    padding: .8rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 19px;
-    text-transform: uppercase;
+
+.sidebar .nav-links li  .link_name {
+  font-size: 13px;
+  font-weight: 400;
+  /* color: var(--blanc); */
+  /* transition: all 0.4s ease; */
+  width: 100%;
 }
 
-.table__header .btn {
-    width: 100%;
-    max-width: 400px;
-    padding: 0 .8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border: 1px solid blue;
-}
-.table__header .btn button{
-    padding: 15px 50px;
-    border-radius: 30px;
-    border: none;
-    background-color: var(--vert);
-    color: var(--blanc);
-    cursor: pointer;
-    margin-right: 10px;
+.sidebar .nav-links li.active{
 
-}
-.table__header .btn button:hover{
-    background-color: var(--blanc);
-    color: var(--vert);
-    cursor: pointer;
-    border: 1px solid var(--vert);
-}
-@media (max-width: 768px) {
-    .table__header {
-  
-    font-size: 14px;
+  background-color: hsl(162.17deg 89.52% 62.43% / 52%);
+  color: var(--blanc);
 }
 
-.table__header .btn {
-    width: initial;
-    max-width: 300px;
-    flex-direction: column;
-    margin-left: 15px;
-}
 
-.table__header .btn button{
-    margin-bottom: 10px;
-    margin-right: 0px;
-    padding: 10px 40px;
-
-}
-}
-@media (max-width: 375px) {
-    .table__header {
-  
-  font-size: 11px;
-}
-.table__header {
-
-    padding: .8rem 0.5rem;
-}
+.sidebar.close .nav-links li  .link_name {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
 
-
-
-.table__body {
-    width: 95%;
-    max-height: calc(89% - 1.6rem);
-    margin: .8rem auto;
-    /* border-radius: .6rem; */
-    overflow: auto;
-    overflow: overlay;
-}
-
-.table__body::-webkit-scrollbar{
-    width: 0.5rem;
-    height: 0.5rem;
-}
-
-.table__body::-webkit-scrollbar-thumb{
-    border-radius: .5rem;
-    background-color: #0004;
-    visibility: hidden;
-}
-
-.table__body:hover::-webkit-scrollbar-thumb{ 
-    visibility: visible;
-}
-
-table {
-    width: 100%;
-}
-
-
-
-table, th, td {
-    border-collapse: collapse;
-    padding: 1rem;
-    text-align: left;
-}
-
-thead th {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: var(--vert);
-    text-transform: capitalize;
-    color: var(--blanc);
-}
-
-tbody tr:nth-child(even) {
-    background-color: #0000000b;
-}
-
-tbody tr {
-    --delay: .1s;
-    transition: .5s ease-in-out var(--delay), background-color 0s;
-}
-
-tbody tr.hide {
-    opacity: 0;
-    transform: translateX(100%);
-}
-
-
-tbody tr td,
-tbody tr td p,
-tbody tr td img {
-    transition: .2s ease-in-out;
-}
-
-tbody tr.hide td,
-tbody tr.hide td p {
-    padding: 0;
-    font: 0 / 0 sans-serif;
-    transition: .2s ease-in-out .5s;
-}
-
-
-@media (max-width: 1000px) {
-    td:not(:first-of-type) {
-        min-width: 12.1rem;
-    }
-}
-
-/* .export__file {
-    position: relative;
-}
-
-.export__file .export__file-btn {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background: #fff6 url(images/export.png) center / 80% no-repeat;
-    border-radius: 50%;
-    transition: .2s ease-in-out;
-}
-
-.export__file .export__file-btn:hover { 
-    background-color: #fff;
-    transform: scale(1.15);
-    cursor: pointer;
-} */
-
-/* .export__file .export__file-options {
-    position: absolute;
-    right: 0;
-    
-    width: 12rem;
-    border-radius: .5rem;
-    overflow: hidden;
-    text-align: center;
-
-    opacity: 0;
-    transform: scale(.8);
-    transform-origin: top right;
-    
-    box-shadow: 0 .2rem .5rem #0004;
-    
-    transition: .2s;
-} */
-
-/* .export__file input:checked + .export__file-options {
-    opacity: 1;
-    transform: scale(1);
-    z-index: 100;
-}
-
-.export__file .export__file-options label{
-    display: block;
-    width: 100%;
-    padding: .6rem 0;
-    background-color: #f2f2f2;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    transition: .2s ease-in-out;
-} */
-
-/* .export__file .export__file-options label:first-of-type{
-    padding: 1rem 0;
-    background-color: #86e49d !important;
-}
-
-.export__file .export__file-options label:hover{
-    transform: scale(1.05);
-    background-color: #fff;
-    cursor: pointer;
-} */
-
-/* .export__file .export__file-options img{
-    width: 2rem;
-    height: auto;
-} */
 
 
 </style>
