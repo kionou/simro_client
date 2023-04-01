@@ -1,19 +1,22 @@
 <template>
     <div>
         <div class="container">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1H-947mLzNVKwthcdPGj6DVA5q2fqMfQ&ehbc=2E312F" width="640" height="480"></iframe>
+
+            </div>
             
-            <CardMagasin v-for="card in 2" :key="card.id" />
         </div>
       
     </div>
 </template>
 
 <script>
-import CardMagasin from '../other/cardMagasin.vue';
+
 export default {
     name: 'CPtMagasin',
     components:{
-        CardMagasin
+       
     },
 
     data() {
@@ -36,17 +39,21 @@ export default {
 .container{
     max-width: var(--max-width);
     margin: 0 auto;
-    height: auto;
-    padding: 5px;
-    /* border: 1px solid; */
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, auto));
-  grid-gap: 5px;
-  justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
- 
+    padding: 0 !important;
+  
 
+}
+.maps{
+width: 100%;
+height: 450px;
+padding: 10px;
+background-color: var(--blanc);
+
+}
+iframe{
+  width: 100%;
+    height: 100%;
+    border: none;
 }
 
 

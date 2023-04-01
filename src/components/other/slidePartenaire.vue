@@ -1,55 +1,30 @@
 <template>
     
     <VueAIcarousel :Property="{ID: 'Two', Dlay:1000}">
-      <div class="cards">
-        <div class="image">
-        <img src="@/assets/images/favicon1.png" alt="">
-        </div>
-      </div>
-      <div class="cards">
-        <div class="image">
-        <img src="@/assets/images/logocpc-1.png" alt="">
-        </div>
-      </div>
-      <div class="cards">
-        <div class="image">
-        <img src="@/assets/images/favicon1.png" alt="">
-        </div>
-      </div>
-      <div class="cards">
-        <div class="image">
-        <img src="@/assets/images/logocpc-1.png" alt="">
-        </div>
-      </div>
-      <div class="cards">
-        <div class="image">
-        <img src="@/assets/images/favicon1.png" alt="">
-        </div>
-      </div>
-      <div class="cards">
-        <div class="image">
-        <img src="@/assets/images/logocpc-1.png" alt="">
-        </div>
-      </div>
-   
-
-    
-      
+      <Card :partenaires="partenaires"/>     
     </VueAIcarousel>
     
   
 </template>
 
 <script>
+import Card from "./cardPartenaire.vue";
 import VueAIcarousel from "vue-ai-carousel"
-//import { defineAsyncComponent } from 'vue';
-
 export default ({
   name: 'MyHome',
   components: {
-    VueAIcarousel,
-    //VueAIcarousel: defineAsyncComponent(() =>import(/*webpackChunkName: "VueAIcarousel" */ 'vue-ai-carousel')),
-  }
+    VueAIcarousel, Card
+  },
+  data() {
+    return {
+      partenaires:''
+      
+    }
+  },
+  mounted() {
+    const response = require('@/lib/partenaire.json')
+    this.partenaires = response
+  },
 });
 </script>
 <style >
@@ -58,8 +33,16 @@ export default ({
 }
 </style>
 
-<style  scoped >
-
+<style   >
+.cards .image{
+  width:150px ;
+  height: 130px !important;
+  background-color: var(--blanc) !important;
+}
+.cards img{
+  width:100% ;
+  height: auto;
+}
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
     width: 290PX;
     height: 160px;
@@ -79,13 +62,5 @@ export default ({
     border-radius: 0 !important;
 }
 
-.cards .image{
-  width:150px ;
-  height: 130px !important;
-  background-color: var(--blanc) !important;
-}
-.cards img{
-  width:100% ;
-  height: auto;
-}
+
 </style>

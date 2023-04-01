@@ -104,6 +104,8 @@ padding-bottom: 30px;
   width: 100%;
   height: auto;
   padding: 20px 0;
+  background-color: var(--vert);
+  color: var(--blanc);
 }
 .magasin h2{
   text-align: center;

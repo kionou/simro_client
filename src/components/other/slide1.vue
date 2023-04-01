@@ -25,11 +25,10 @@ export default {
   },
   components: {
     VueAIcarousel, CardSilde
-    //VueAIcarousel: defineAsyncComponent(() =>import(/*webpackChunkName: "VueAIcarousel" */ 'vue-ai-carousel')),
+
   },
   mounted() {
     const response = require('@/lib/marche.json')
-        console.log(response);
         this.produits = response
   },
 };

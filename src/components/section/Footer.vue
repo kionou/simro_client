@@ -126,6 +126,7 @@ export default {
 }
 
 @media (max-width: 685px) {
+
   .corps-footer {
     height: auto;
     padding:10px;
