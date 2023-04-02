@@ -1,16 +1,8 @@
-<template>  
+<template>
     <div>
-        <Carousel
-        :slides="slides"
-          :interval="5000"
-          :textes="textes"
-          :titres="titres"
-          indicators
-          class="carou"
-          :style="{
+        <Carousel :slides="slides" :interval="5000" :textes="textes" :titres="titres" indicators class="carou" :style="{
             height: height + 'vh'
-          }"
-        />
+        }" />
     </div>
 </template>
 
@@ -18,26 +10,24 @@
 import Carousel from '@/components/Accueil/banner/carousel.vue'
 
 export default {
-    name:'HeaderComponent',
+    name: 'HeaderComponent',
     props: ['slides', 'textes', 'titres', 'height'],
-    components:{
+    components: {
         Carousel
     },
     methods: {
-        
+
     },
-   
+
 }
 </script>
 
 <style>
-
-.Acc-headd{
+.Acc-headd {
     z-index: 998;
 }
-.carou{
+
+.carou {
     object-fit: cover;
 }
-
-  
 </style>

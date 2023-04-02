@@ -2,7 +2,7 @@
     
                 <section class="table__header">
             <h1> Magasin centre </h1> 
-            <p>Les informations sur la filière du riz</p> 
+            <p>Les informations sur la filière du rizz</p> 
             <div class="btn">
                 <button @click="layout = 'prix'" :class="{active:layout === 'prix'}">
                     Prix
@@ -139,7 +139,7 @@
 
 <script>
 export default {
-    name: 'SimroClientCptRiz',
+    name: 'CptRiz',
 
     data() {
         return {

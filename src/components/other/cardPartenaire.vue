@@ -9,7 +9,7 @@
 <script>
 import { getImage } from '@/lib/getImage';
 export default {
-    name: 'SimroClientCardPartenaire',
+    name: 'CardPartenaire',
     props:['partenaires'],
 
     data() {

@@ -12,7 +12,7 @@
 <script>
 import { Carousel, Slide } from 'vue-carousel';
 export default {
-    name: 'SimroClientCarousel',
+    name: 'CptCarousel',
     components: {
     Carousel,
     Slide

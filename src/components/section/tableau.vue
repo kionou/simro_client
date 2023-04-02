@@ -33,7 +33,7 @@ import Select from '../other/select.vue';
 import Oignon from '../other/cptOignon.vue';
 import Riz from '../other/cptRiz.vue';
 export default {
-    name: 'SimroClientTableau',
+    name: 'CptTableau',
     components: { Select, Oignon, Riz },
 
     data() {

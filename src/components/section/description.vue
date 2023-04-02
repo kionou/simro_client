@@ -35,7 +35,7 @@
 
 <script>
 export default {
-    name: 'SectionDescription',
+    name: 'CptDescription',
 
     data() {
         return {

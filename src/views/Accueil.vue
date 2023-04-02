@@ -3,19 +3,17 @@
     <Header :slides="slides" :textes="textes" :titres="titres" :height="60" />
     <Corps />
     <Top />
-   
- 
   </div>
 </template>
 
 <script>
 import Header from '@/components/section/header.vue';
 import Corps from '@/components/corps.vue'
- import Top from '@/components/other/icone.vue';
+import Top from '@/components/other/icone.vue';
 export default {
   name: 'ViewsAccueil',
   components: {
-    Header, Corps , Top
+    Header, Corps, Top
   },
 
   data() {

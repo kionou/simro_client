@@ -1,13 +1,13 @@
 <template>
-    <a @click="scrollTop" v-show="visible" class="bottom-right">
-        <slot></slot>
-    </a>
+  <a @click="scrollTop" v-show="visible" class="bottom-right">
+    <slot></slot>
+  </a>
 </template>
 
 <script>
 export default {
-    name:'CptTop',
-  data () {
+  name: 'CptTop',
+  data() {
     return {
       visible: false
     }
@@ -28,9 +28,6 @@ export default {
   mounted: function () {
     window.addEventListener('scroll', this.scrollListener)
   },
-//   beforeDestroy: function () {
-//     window.removeEventListener('scroll', this.scrollListener)
-//   }
 }
 </script>
 

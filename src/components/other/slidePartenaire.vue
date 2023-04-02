@@ -11,7 +11,7 @@
 import Card from "./cardPartenaire.vue";
 import VueAIcarousel from "vue-ai-carousel"
 export default ({
-  name: 'MyHome',
+  name: 'CptSlide',
   components: {
     VueAIcarousel, Card
   },

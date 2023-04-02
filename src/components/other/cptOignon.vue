@@ -204,7 +204,7 @@
 
 <script>
 export default {
-    name: 'SimroClientCptOignon',
+    name: 'CptOignon',
 
     data() {
         return {
