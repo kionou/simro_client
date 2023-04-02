@@ -45,10 +45,10 @@ export default {
     },
 
     mounted() {
-        let sidebar = document.querySelector(".sidebar");
-        if (window.screen.width <= 700) {
-            sidebar.classList.toggle("close");
-        }
+        // let sidebar = document.querySelector(".sidebar");
+        // if (window.screen.width <= 700) {
+        //     sidebar.classList.toggle("close");
+        // }
 
     },
 
