@@ -317,4 +317,20 @@ tbody tr.hide td p {
     }
 }
 
+@media (max-width: 768px) {
+    .sidebar.close {
+        width: 30px;
+    }
+
+    .sidebar.close~.two-section {
+        left: 30px;
+        width: calc(100% - 30px);
+    }
+
+    .sidebar.close .nav-links li .link_name {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 </style>
