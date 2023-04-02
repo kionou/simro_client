@@ -112,7 +112,7 @@ export default {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
-  z-index: 2;
+  z-index: 102;
   top: 64px;
 }
 
