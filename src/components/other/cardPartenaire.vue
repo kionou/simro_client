@@ -31,7 +31,7 @@ export default {
 <style lang="css" >
 .cards .image{
   width:150px ;
-  height: 130px !important;
+  height: 150px !important;
   background-color: var(--blanc) !important;
 }
 .cards img{

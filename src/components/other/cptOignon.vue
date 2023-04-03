@@ -18,7 +18,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th> Type d'Oignon </th>
+                        <th> Oignon </th>
                         <th> Tas </th>
                         <th> Sachet 100g </th>
                         <th> Sachet 250g </th>
@@ -334,8 +334,8 @@ table {
 
 table, th, td {
     border-collapse: collapse;
-    padding: 1rem;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
 }
 
 thead th {

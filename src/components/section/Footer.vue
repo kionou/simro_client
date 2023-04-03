@@ -1,7 +1,7 @@
 <template>
   <div class="corps-footer">
     <div class="corps-footer-logo">
-      <a href="" class="logo">
+      <a href="#" class="logo">
         <img src="@/assets/images/logo.png">
         Système d'Information sur les Marchés <br> du Riz et de l'Oignon au Cameroun
       </a>
@@ -63,6 +63,7 @@ export default {
 
 .corps-footer-logo img {
   width: 90px !important;
+  margin-right: 6px;
 
 }
 

@@ -241,7 +241,7 @@ export default {
 }
 
 .table__body {
-    width: 95%;
+    width: 98%;
     max-height: calc(89% - 1.6rem);
     margin: .8rem auto;
     overflow: auto;
@@ -269,8 +269,8 @@ table {
 
 table, th, td {
     border-collapse: collapse;
-    padding: 1rem;
-    text-align: left;
+    padding: 10px;
+    text-align:center;
 }
 
 thead th {

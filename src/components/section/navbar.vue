@@ -218,7 +218,7 @@ export default {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    margin-top: 86px;
+    margin-top: 80px;
   }
 
   .Acc-nav a {

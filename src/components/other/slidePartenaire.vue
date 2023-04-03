@@ -45,7 +45,7 @@ export default ({
 }
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
     width: 290PX;
-    height: 160px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
