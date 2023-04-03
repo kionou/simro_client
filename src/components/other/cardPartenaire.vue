@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style lang="css" >
+<style lang="css" scoped >
 .cards .image{
   width:150px ;
   height: 150px !important;

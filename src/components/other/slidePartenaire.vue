@@ -36,7 +36,7 @@ export default ({
 <style   >
 .cards .image{
   width:150px ;
-  height: 130px !important;
+  height: 150px !important;
   background-color: var(--blanc) !important;
 }
 .cards img{
@@ -44,7 +44,7 @@ export default ({
   height: auto;
 }
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
-    width: 290PX;
+    width: 290px;
     height: 180px;
     display: flex;
     align-items: center;
@@ -52,7 +52,6 @@ export default ({
     font-size: 12px !important;
     font-weight: 600;
     background-color:transparent !important;
-    /* margin: 0 5px; */
     color: var(--noir) !important;
     position: relative;
     z-index: 1;
