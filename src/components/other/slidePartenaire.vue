@@ -35,7 +35,7 @@ export default ({
 
 <style   >
 .cards .image{
-  width:150px ;
+  width:150px !important ;
   height: 150px !important;
   background-color: var(--blanc) !important;
 }
@@ -44,8 +44,8 @@ export default ({
   height: auto;
 }
 .lC3oC2kE3bD2fB1jC2qB4eF1v div {
-    width: 290px;
-    height: 180px;
+    width: 290px !important;
+    height: 180px !important;
     display: flex;
     align-items: center;
     justify-content: center;
